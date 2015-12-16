@@ -2,22 +2,20 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div id="hero" class="container-fluid">
+  <div class="col-md-12">
+    <img src="/images/hero-image.png" alt="Hero Image" class="img-responsive hero-image">
+    <div class="hero-text">
+      <h2 class="text-center">
+        “WE ALL WORK BETTER WHEN WE SHARE INFORMATION AND HAVE
+        THE TOOLS TO COLLABORATE...co.lateral MAKES THAT HAPPEN”
+      </h2>
+      <p class="text-center slogan-one">
+        Software and technology solutions delivered for you
+      </p>
+      <p class="text-center slogan-two">
+        WORK SMARTER  |  COMMUNICATE BETTER  |  REDDUCE RISK  |  MAXIMISE NEW OPPORTUNITIES
+      </p>
+    </div>
+  </div>
 </div>
