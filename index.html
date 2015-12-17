@@ -20,3 +20,32 @@ layout: default
   </div>
 </div>
 <div id="hero-border"></div>
+
+<div id="swoop" class="container-fluid">
+  <div class="container">
+    <h1>{{ site.data.swoop-details.title }}</h1>
+    <hr class="orange"/>
+    <div class="row">
+      {% for description in site.data.swoop-details.mini-descriptions %}
+      <div class="col-lg-4">
+        <h2>{{ description.title }}</h2>
+        <p>{{ description.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <hr class="hr-dotted">
+    <div class="row">
+      <div class="col-md-6 col-md-push-6">
+        <img src="{{ site.baseurl }}/{{ site.data.swoop-details.description-logo }}" alt="Swoop Logo" class="img-responsive logo">
+      </div>
+      <div class="col-md-6 col-md-pull-6">
+        <div class="description">
+          {% for description in site.data.swoop-details.descriptions %}
+            <p>{{ description }}</p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="swoop-border"></div>

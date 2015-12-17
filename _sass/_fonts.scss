@@ -9,3 +9,9 @@
   src: url('../fonts/gotham-light-webfont.eot');
   src: local('GothamLight'), url('../fonts/gotham-light-webfont.woff') format('woff'), url('../fonts/gotham-light-webfont.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('../fonts/Gotham-Medium.eot');
+  src: local('GothamLight'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype');
+}
