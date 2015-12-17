@@ -151,3 +151,35 @@ hr
     margin: 10px 0 30px 0
     strong
       font-family: 'GothamBook', 'sans-serif'
+
+#colateral
+  margin: 50px auto
+  h1
+    text-align: left
+    span
+      border-bottom: 2px solid #F25A2A
+      padding-bottom: 20px
+  p
+    margin: 40px 0
+    font-size: 15px
+    line-height: 1.7
+    strong
+      line-height: 1
+      font-family: 'GothamMedium', 'sans-serif'
+
+#colateral-border
+  left: 0
+  top: 0
+  width: 100%
+  height: 0
+  background: #ffffff
+  text-align: center
+  &::before
+    content: ""
+    display: inline-block
+    top: 100%
+    width: 100%
+    border-left: 49vw solid transparent
+    border-right: 49vw solid transparent
+    border-top: 50px solid #ffffff
+    box-sizing: border-box
