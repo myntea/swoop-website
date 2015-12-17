@@ -49,3 +49,24 @@ layout: default
   </div>
 </div>
 <div id="swoop-border"></div>
+
+<div id="services" class="container-fluid">
+  <div class="container">
+    <h1>{{ site.data.services.title }}</h1>
+    <hr class="yellow-green"/>
+    <div class="row">
+      {% for service in site.data.services.services %}
+      <div class="col-md-6">
+        <h2>{{ service.title }}</h2>
+        <p>{{ service.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="text-center">
+      <a class="btn btn-lg btn-default" href="{{ site.baseurl }}{{ site.data.services.button-url }}" role="button">{{ site.data.services.button-title }}</a>
+    </p>
+    <p class="text-center button-description">
+      {{ site.data.services.button-description }}
+    </p>
+  </div>
+</div>
