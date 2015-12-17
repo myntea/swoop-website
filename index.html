@@ -70,3 +70,14 @@ layout: default
     </p>
   </div>
 </div>
+
+<div id="features" class="container-fluid">
+  <div class="row">
+    {% for feature in site.data.features %}
+      <div class="col-md-3 col-sm-6 col-xs-6 feature-container" style="background-color: #{{ feature.background-color }}">
+        <img src="{{ site.baseurl }}/{{ feature.image }}" alt="{{ feature.description }}" class="img-responsive center-block feature-image">
+        <p class="text-center">{{ feature.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
