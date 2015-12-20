@@ -1,0 +1,14 @@
+- name: Tesco
+  logo: images/logos/tesco.png
+
+- name: Visa
+  logo: images/logos/visa.png
+
+- name: PADDYPOWER
+  logo: images/logos/paddypower.png
+
+- name: Talon
+  logo: images/logos/talon.png
+
+- name: Skills2Use
+  logo: images/logos/S2U.png

@@ -134,3 +134,17 @@ layout: default
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<div id="companies" class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 intro">
+      <h2>COMPANIES USING OUR TECHNOLOGY</h2>
+      <div class="border-right"></div>
+    </div>
+    {% for company in site.data.companies %}
+      <div class="col-md-2">
+        <img src="{{ site.baseurl }}/{{ company.logo }}" alt="{{ company.name }}" class="img-responsive center-block company-logo">
+      </div>
+    {% endfor %}
+  </div>
+</div>
