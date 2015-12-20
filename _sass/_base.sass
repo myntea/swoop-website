@@ -169,6 +169,8 @@ hr
       font-family: 'GothamMedium', 'sans-serif'
 
 #colateral-border
+  position: relative
+  z-index: 1
   left: 0
   top: 0
   width: 100%
@@ -184,3 +186,44 @@ hr
     border-right: 49vw solid transparent
     border-top: 50px solid #ffffff
     box-sizing: border-box
+
+#testimonials
+  .item
+    min-height: 500px
+    background-size: cover
+    .carousel-caption
+      .strike
+        display: block
+        text-align: center
+        overflow: hidden
+        white-space: nowrap
+        > span
+          position: relative
+          display: inline-block
+          border: 1.5px solid #ffffff
+          border-radius: 50%
+          -webkit-border-radius: 50%
+          -moz-border-radius: 50%
+          padding: 10px 16px
+          &:before, &:after
+            content: ""
+            position: absolute
+            top: 50%
+            width: 9999px
+            height: 1.5px
+            background: #ffffff
+          &:before
+            right: 100%
+          &:after
+            left: 100%
+      hr
+        border-top: 2px solid #ffffff
+        width: 100%
+      p
+        font-family: 'GothamMedium', 'sans-serif'
+        &.testimonial
+          margin: 50px 50px
+          font-size: 18px
+        &.author
+          font-size: 14px
+          margin: 40px 0
