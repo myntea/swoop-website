@@ -1,14 +1,17 @@
-- name: Tesco
-  logo: images/logos/tesco.png
+title: COMPANIES USING OUR TECHNOLOGY
 
-- name: Visa
-  logo: images/logos/visa.png
+companies:
+  - name: Tesco
+    logo: images/logos/tesco.png
 
-- name: PADDYPOWER
-  logo: images/logos/paddypower.png
+  - name: Visa
+    logo: images/logos/visa.png
 
-- name: Talon
-  logo: images/logos/talon.png
+  - name: PADDYPOWER
+    logo: images/logos/paddypower.png
 
-- name: Skills2Use
-  logo: images/logos/S2U.png
+  - name: Talon
+    logo: images/logos/talon.png
+
+  - name: Skills2Use
+    logo: images/logos/S2U.png

@@ -7,14 +7,13 @@ layout: default
     <img src="{{ site.baseurl }}/images/hero-image.png" alt="Hero Image" class="img-responsive hero-image">
     <div class="hero-text">
       <h2 class="text-center">
-        “WE ALL WORK BETTER WHEN WE SHARE INFORMATION AND HAVE
-        THE TOOLS TO COLLABORATE...co.lateral MAKES THAT HAPPEN”
+        {{ site.data.hero.quote }}
       </h2>
       <p class="text-center slogan-one">
-        Software and technology solutions delivered for you
+        {{ site.data.hero.slogan-one }}
       </p>
       <p class="text-center slogan-two">
-        WORK SMARTER  |  COMMUNICATE BETTER  |  REDDUCE RISK  |  MAXIMISE NEW OPPORTUNITIES
+        {{ site.data.hero.slogan-two }}
       </p>
     </div>
   </div>
@@ -88,10 +87,8 @@ layout: default
       <img src="{{ site.baseurl }}/images/co.lateral_section.png" alt="co.lateral" class="img-responsive">
     </div>
     <div class="col-md-6">
-      <h1><span>co.lateral</span></h1>
-      <p>
-        Our <strong>co.lateral</strong> technology helps companies work better, and makes those individuals involved in specific businesses processes more effective, time efficient and generally more productive. <strong>co.lateral</strong> reduces errors and re work, and ensures a clear, transparent and concise work flow. At its heart is the ability to manage processes, and solve complex process issues through the use of advanced technology. It is module-based and is flexible enough to meet the needs of your business today whilst developing with you into the future.
-      </p>
+      <h1><span>{{ site.data.colateral.title }}</span></h1>
+      <p>{{ site.data.colateral.description }}</p>
     </div>
   </div>
 </div>
@@ -138,10 +135,10 @@ layout: default
 <div id="companies" class="container-fluid">
   <div class="row">
     <div class="col-md-2 intro">
-      <h2>COMPANIES USING OUR TECHNOLOGY</h2>
+      <h2>{{ site.data.companies.title }}</h2>
       <div class="border-right"></div>
     </div>
-    {% for company in site.data.companies %}
+    {% for company in site.data.companies.companies %}
       <div class="col-md-2">
         <img src="{{ site.baseurl }}/{{ company.logo }}" alt="{{ company.name }}" class="img-responsive center-block company-logo">
       </div>
@@ -152,11 +149,8 @@ layout: default
 <div id="contact" class="container-fluid">
   <div class="container">
     <div class="col-md-4 left">
-      <h1>CONTACT US</h1>
-      <p>
-        It's easy to get in touch, just call or email <strong>Dorian</strong> or <strong>Amanda</strong> and we
-        look forward to hearing from you.
-      </p>
+      <h1>{{ site.data.contact.title }}</h1>
+      <p>{{ site.data.contact.get-in-touch }}</p>
       <p>
         <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>{{ site.data.contact.contact-no }} <br>
         <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>{{ site.data.contact.contact-email }}
@@ -169,8 +163,8 @@ layout: default
       </address>
     </div>
     <div class="col-md-8">
-      <h1 class="question">Would co.lateral make your working life better?</h1>
-      <p class="description">Is there a complex problem that needs our technological expertise and design? Do you have a very definite requirement for a software solution? Even if you are simply exploring what is possible with today's new technologies, it would be great to hear from you. </p>
+      <h1 class="question">{{ site.data.contact.question }}</h1>
+      <p class="description">{{ site.data.contact.description }}</p>
       <div class="row">
         <div class="form-group col-sm-4">
           <input type="text" class="form-control" id="name" placeholder="Enter name" required>
