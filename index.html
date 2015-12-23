@@ -148,3 +148,50 @@ layout: default
     {% endfor %}
   </div>
 </div>
+
+<div id="contact" class="container-fluid">
+  <div class="container">
+    <div class="col-md-4 left">
+      <h1>CONTACT US</h1>
+      <p>
+        It's easy to get in touch, just call or email <strong>Dorian</strong> or <strong>Amanda</strong> and we
+        look forward to hearing from you.
+      </p>
+      <p>
+        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>{{ site.data.contact.contact-no }} <br>
+        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>{{ site.data.contact.contact-email }}
+      </p>
+      <address>
+        {{ site.data.contact.name }}<br />
+        {{ site.data.contact.address1 }} <br />
+        {{ site.data.contact.address2 }} <br />
+        {{ site.data.contact.country }}
+      </address>
+    </div>
+    <div class="col-md-8">
+      <h1 class="question">Would co.lateral make your working life better?</h1>
+      <p class="description">Is there a complex problem that needs our technological expertise and design? Do you have a very definite requirement for a software solution? Even if you are simply exploring what is possible with today's new technologies, it would be great to hear from you. </p>
+      <div class="row">
+        <div class="form-group col-sm-4">
+          <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+        </div>
+        <div class="form-group col-sm-4">
+          <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group col-sm-4">
+          <input type="email" class="form-control" id="phone" placeholder="Enter phone" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+      </div>
+      <button type="submit" id="form-submit" class="btn btn-lg pull-right ">SEND</button>
+      <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+    </div>
+    <footer>
+      <hr />
+      <p class="pull-left"><span class="copyright">COPYRIGHT</span> SWOOP 2016</p>
+      <p class="pull-right back-to-top">BACK TO TOP <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></p>
+    </footer>
+  </div>
+</div>

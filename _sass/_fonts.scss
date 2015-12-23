@@ -15,3 +15,8 @@
   src: url('../fonts/Gotham-Medium.eot');
   src: local('GothamLight'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype');
 }
+
+.form-control::-webkit-input-placeholder { color: white !important; }
+.form-control:-moz-placeholder { color: white !important; }
+.form-control::-moz-placeholder { color: white !important; }
+.form-control:-ms-input-placeholder { color: white !important; }
