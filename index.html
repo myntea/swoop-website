@@ -134,12 +134,11 @@ layout: default
 
 <div id="companies" class="container-fluid">
   <div class="row">
-    <div class="col-md-2 intro">
+    <div class="col-lg-2 col-md-4 col-xs-6 intro">
       <h2>{{ site.data.companies.title }}</h2>
-      <div class="border-right"></div>
     </div>
     {% for company in site.data.companies.companies %}
-      <div class="col-md-2">
+      <div class="col-lg-2 col-md-4 col-xs-6 ">
         <img src="{{ site.baseurl }}/{{ company.logo }}" alt="{{ company.name }}" class="img-responsive center-block company-logo">
       </div>
     {% endfor %}
