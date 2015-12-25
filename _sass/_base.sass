@@ -25,6 +25,8 @@ body
       height: 70px
       img
         height: 100%
+    .navbar-toggle
+      padding: 19px 16px
 
 #hero
   background-color: #15C4CB
@@ -294,6 +296,7 @@ hr
     font-size: 14px
   .btn
     background: #15C4CB
+    margin-bottom: 20px
   footer
     p
       font-size: 12px
@@ -305,3 +308,37 @@ hr
       width: 100%
     .copyright
       color: #606266
+
+@media (max-width: $screen-md-max)
+  #hero
+    .hero-text
+      margin: 40px !important
+
+@media (max-width: $screen-sm-max)
+  #hero
+    .hero-text
+      color: #ffffff
+      font-size: 12px !important
+    .slogan-one
+      font-size: 20px !important
+    .slogan-two
+      font-size: 15px !important
+  #testimonials
+    .item
+      min-height: 600px
+      .testimonial
+        margin: 50px 0 !important
+  #companies
+    .intro
+      h2
+        padding-top: 0 !important
+        padding-bottom: 15px
+        text-align: center
+        border-right: 0 !important
+        border-bottom: 2px solid #F25A2A
+
+@media (max-width: $screen-xs-max)
+  #companies
+    .intro
+      h2
+        font-size: 1.2em !important

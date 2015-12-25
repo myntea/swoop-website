@@ -2,7 +2,7 @@
 layout: front-page
 
 #hero section
-hero-quote: “WE ALL WORK BETTER WHEN WE SHARE INFORMATION AND HAVE THE TOOLS TO COLLABORATE...<strong>co.lateral</strong> MAKES THAT HAPPEN”
+hero-quote: “WE ALL WORK BETTER WHEN WE SHARE INFORMATION AND HAVE THE TOOLS TO COLLABORATE... <strong>co.lateral</strong> MAKES THAT HAPPEN”
 hero-slogan-one: Software and technology solutions delivered for you
 hero-slogan-two: WORK SMARTER  |  COMMUNICATE BETTER  |  REDDUCE RISK  |  MAXIMISE NEW OPPORTUNITIES
 
@@ -95,12 +95,6 @@ colateral-description: >
 
 #testimonials section
 testimonials:
-    - bg-image: images/cloud-image.png
-      message: >
-              THE NEW PLATFORM HAS REALLY IMPROVED WORKFLOW COMMUNICATION BETWEEN HEAD OFFICE AND OUR SHOPS,
-              MAKING STANDARDS BETTER AND MAKING EVERYONE’S LIVES EASIER.
-      author: NICK FRENCH, PADDY POWER
-    
     - bg-image: images/cloud-image.png
       message: >
               THE NEW PLATFORM HAS REALLY IMPROVED WORKFLOW COMMUNICATION BETWEEN HEAD OFFICE AND OUR SHOPS,
