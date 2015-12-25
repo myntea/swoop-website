@@ -40,7 +40,7 @@ swoop-descriptions:
 services-title: OUR SERVICES
 
 services-button-title: TALK TO SWOOP TODAY
-services-button-url: /#contact
+services-button-url: "#contact"
 services-button-description: >
     We love a <strong>conversation</strong>, we love a <strong>challenge</strong>, 
     and more than anything we love <strong>technology</strong>.

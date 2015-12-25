@@ -15,10 +15,19 @@ swoop.backToTop = function(){
 
 swoop.anchorEasing = function(){
     $('nav').on('click', 'a[href*=#]', function(event){
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-        $('.navbar-toggle').click()
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
     });
+    $('#talk-to-swoop').on('click', function(event){
+        console.log('aw');
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+    });
+
 };
 
 $(function(){
