@@ -1,0 +1,189 @@
+---
+layout: default
+---
+
+<section id="hero" class="container-fluid">
+    <div class="col-md-12">
+        <img src="{{ site.baseurl }}/images/hero-image.png" alt="Hero Image" class="img-responsive hero-image">
+        <div class="hero-text">
+            <h2 class="text-center">
+                {{ page.hero-quote }}
+            </h2>
+            <p class="text-center slogan-one">
+                {{ page.hero-slogan-one }}
+            </p>
+            <p class="text-center slogan-two">
+                {{ page.hero-slogan-two }}
+            </p>
+        </div>
+    </div>
+</section>
+<div id="hero-border"></div>
+
+<section id="swoop" class="container-fluid">
+    <div class="container">
+        <h1>{{ page.swoop-title }}</h1>
+        <hr class="orange"/>
+        <div class="row">
+            {% for description in page.swoop-mini-descriptions %}
+            <div class="col-lg-4">
+                <h2>{{ description.title }}</h2>
+                <p>{{ description.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <hr class="hr-dotted">
+        <div class="row">
+            <div class="col-md-6 col-md-push-6">
+                <img src="{{ site.baseurl }}/{{ page.swoop-description-logo }}" alt="Swoop Logo" class="img-responsive logo">
+            </div>
+            <div class="col-md-6 col-md-pull-6">
+                <div class="description">
+                    {% for description in page.swoop-descriptions %}
+                    <p>{{ description }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="swoop-border"></div>
+
+<section id="services" class="container-fluid">
+    <div class="container">
+        <h1>{{ page.services-title }}</h1>
+        <hr class="yellow-green"/>
+        <div class="row">
+            {% for service in page.services-services %}
+            <div class="col-md-6">
+                <h2>{{ service.title }}</h2>
+                <p>{{ service.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <p class="text-center">
+            <a class="btn btn-default" href="{{ site.baseurl }}{{ page.services-button-url }}" role="button">{{ page.services-button-title }}</a>
+        </p>
+        <p class="text-center button-description">
+            {{ page.services-button-description }}
+        </p>
+    </div>
+</section>
+
+<section id="features" class="container-fluid">
+    <div class="row">
+        {% for feature in page.features %}
+        <div class="col-md-3 col-sm-6 col-xs-6 feature-container" style="background-color: #{{ feature.background-color }}">
+            <img src="{{ site.baseurl }}/{{ feature.image }}" alt="{{ feature.description }}" class="img-responsive center-block feature-image">
+            <p class="text-center">{{ feature.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="colateral" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ site.baseurl }}/{{ page.colateral-image }}" alt="co.lateral" class="img-responsive">
+        </div>
+        <div class="col-md-6">
+            <h1><span>{{ page.colateral-title }}</span></h1>
+            <p>{{ page.colateral-description }}</p>
+        </div>
+    </div>
+</section>
+<div id="colateral-border"></div>
+
+<section id="testimonials" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        {% for testimonial in page.testimonials %}
+        <li data-target="#testimonials" data-slide-to="{{ forloop.index0 }}" {% if forloop.index0 == 0 %}class="active"{% endif %}></li>
+        {% endfor %}
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        {% for testimonial in page.testimonials %}
+        <div class="item {% if forloop.index0 == 0 %}active{% endif %}" style="background-image: url({{ site.baseurl }}/{{ testimonial.bg-image }});">
+            <!--<img src="{{ site.baseurl }}/images/hero-image.png" alt="...">-->
+            <div class="carousel-caption">
+                <hr />
+                <p class="testimonial">{{ testimonial.message }}</p>
+                <div class="strike">
+            <span><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAALCAYAAACksgdhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHxJREFUeNpi/P//PwMaCADiB0B8AU1cAIgdwOIgTVDcAMQf/kPAAiRxATS5BhaoKRuA2B/K/gi1CWb6ASDWh/Ifwmxq+I8AF6AmI9v+H912EPEAScIASQOy3ANkcYb/qIABDcPAAWRxxv9Ygg8IGKE0VjkmBjLAINcEEGAANunEH7zPgnUAAAAASUVORK5CYII="
+                    alt="hr design"></span>
+                </div>
+                <p class="author">{{ testimonial.author }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#testimonials" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#testimonials" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</section>
+
+<section id="companies" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2 col-md-4 col-xs-6 intro">
+            <h2>{{ page.companies-title }}</h2>
+        </div>
+        {% for company in page.companies %}
+        <div class="col-lg-2 col-md-4 col-xs-6 ">
+            <img src="{{ site.baseurl }}/{{ company.logo }}" alt="{{ company.name }}" class="img-responsive center-block company-logo">
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="contact" class="container-fluid">
+    <div class="container">
+        <div class="col-md-4 left">
+            <h1>{{ page.contact-title }}</h1>
+            <p>{{ page.contact-get-in-touch }}</p>
+            <p>
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>{{ page.contact-no }} <br>
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>{{ page.contact-email }}
+            </p>
+            <address>
+                {{ page.contact-name }}<br />
+                {{ page.contact-address1 }} <br />
+                {{ page.contact-address2 }} <br />
+                {{ page.contact-country }}
+            </address>
+        </div>
+        <div class="col-md-8">
+            <h1 class="question">{{ page.contact-question }}</h1>
+            <p class="description">{{ page.contact-description }}</p>
+            <div class="row">
+                <div class="form-group col-sm-4">
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                </div>
+                <div class="form-group col-sm-4">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-group col-sm-4">
+                    <input type="email" class="form-control" id="phone" placeholder="Enter phone" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" id="form-submit" class="btn btn-lg pull-right ">SEND</button>
+        </div>
+        <footer>
+            <hr />
+            <p class="pull-left"><span class="copyright">COPYRIGHT</span> SWOOP 2016</p>
+            <p class="pull-right back-to-top">BACK TO TOP <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></p>
+        </footer>
+    </div>
+</section>
