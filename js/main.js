@@ -14,7 +14,7 @@ swoop.backToTop = function(){
 };
 
 swoop.anchorEasing = function(){
-    $('a[href*=#]').on('click', function(event){
+    $('nav').on('click', 'a[href*=#]', function(event){
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
         $('.navbar-toggle').click()
