@@ -18,6 +18,7 @@ swoop.anchorEasing = function(){
         $('html, body').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 500);
+        $('.navbar-toggle').click();
         return false;
     });
     $('#talk-to-swoop').on('click', function(event){
