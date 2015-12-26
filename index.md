@@ -100,6 +100,11 @@ testimonials:
               THE NEW PLATFORM HAS REALLY IMPROVED WORKFLOW COMMUNICATION BETWEEN HEAD OFFICE AND OUR SHOPS,
               MAKING STANDARDS BETTER AND MAKING EVERYONE’S LIVES EASIER.
       author: NICK FRENCH, PADDY POWER
+    - bg-image: images/cloud-image.png
+      message: >
+              THE NEW PLATFORM HAS REALLY IMPROVED WHAT WE'vE DONE,
+              MAKING OUR LIVES EASIER.
+      author: ROB HARRISON, FOR TESTING
       
 #companies section (limit company images to 5)
 companies-title: COMPANIES USING OUR TECHNOLOGY
