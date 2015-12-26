@@ -40,4 +40,4 @@ RUN gem install bundler
 RUN gem install execjs therubyracer
 
 # clone the site itself
-RUN git clone git@github.com:longhairedmedia/swoop-website.git
+RUN git clone -b gh-pages https://github.com/longhairedmedia/swoop-website.git
