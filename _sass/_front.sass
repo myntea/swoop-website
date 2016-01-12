@@ -1,0 +1,321 @@
+#hero
+  background-color: #15C4CB
+  .hero-image
+    margin: 0 auto
+    width: 100%
+  .hero-text
+    margin: 40px 140px
+    h2
+      font-family: 'GothamLight', 'sans-serif' !important
+      margin-bottom: 20px
+      color: #ffffff
+      font-size: 2em
+      strong
+        font-family: 'GothamBook', 'sans-serif' !important
+        font-weight: normal
+    .slogan-one
+      font-size: 22px
+      margin: 0
+    .slogan-two
+      font-size: 17px
+#hero-border
+  left: 0
+  top: 0
+  width: 100%
+  height: 0
+  background: #15C4CB
+  text-align: center
+  &::before
+    content: ""
+    display: inline-block
+    top: 100%
+    width: 100%
+    border-left: 48vw solid transparent
+    border-right: 48vw solid transparent
+    border-top: 50px solid #15C4CB
+    box-sizing: border-box
+
+
+#swoop
+  padding-top: 80px
+  background-color: #F7F7F7
+  .description
+    margin: 40px 0
+  .logo
+    margin: 0 auto
+
+#swoop-border
+  left: 0
+  top: 0
+  width: 100%
+  height: 0
+  background: #F7F7F7
+  text-align: center
+  &::before
+    content: ""
+    display: inline-block
+    top: 100%
+    width: 100%
+    border-left: 48vw solid transparent
+    border-right: 48vw solid transparent
+    border-top: 50px solid #F7F7F7
+    box-sizing: border-box
+
+
+hr
+  width: 120px
+  margin-top: 15px
+  &.orange
+    border-bottom: 2px solid #F25A2A
+  &.yellow-green
+    border-bottom: 2px solid #15C4CB
+
+.hr-dotted
+  border-top: 1px solid #CCCCCC
+  padding-top: 5px
+  padding-bottom: 5px
+  margin: 60px auto 60px
+  width: 100%
+  position: relative
+  &:before
+    content: ""
+    width: 10px
+    height: 10px
+    background: #15C4CB
+    border-radius: 5px
+    position: absolute
+    top: -6px
+    box-shadow: 25vw 0 0 0 #F25A2A
+  &:after
+    content: ""
+    width: 10px
+    height: 10px
+    background: #CCCCCC
+    border-radius: 5px
+    position: absolute
+    top: -6px
+    box-shadow: -25vw 0 0 0 #3C3D41
+    right: 0
+
+
+#services
+  padding-top: 80px
+  background-color: #ffffff
+  .button-description
+    font-family: "GothamLight", "sans-serif"
+    font-size: 16px
+    margin: 25px 0
+  .btn-default
+    padding: 10px 20px
+    border: 1.5px solid #3C3D41
+
+#features
+  overflow-x: hidden
+  .row
+    overflow: hidden
+
+  [class*="col-"]
+    margin-bottom: -99999px
+    padding-bottom: 99999px
+
+  .feature-image
+    max-height: 150px
+    margin-top: 30px
+  p
+    font-size: 16px
+    font-family: 'GothamLight', 'sans-serif'
+    color: #ffffff
+    margin: 10px 0 30px 0
+    strong
+      font-family: 'GothamBook', 'sans-serif'
+
+#colateral
+  padding-top: 100px
+  h1
+    text-align: left
+    span
+      border-bottom: 2px solid #F25A2A
+      padding-bottom: 20px
+  p
+    margin: 40px 0
+    font-size: 15px
+    line-height: 1.7
+    strong
+      line-height: 1
+      font-family: 'GothamMedium', 'sans-serif'
+
+#colateral-border
+  position: relative
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 0
+  background: #ffffff
+  text-align: center
+  &::before
+    content: ""
+    display: inline-block
+    top: 100%
+    width: 100%
+    border-left: 48vw solid transparent
+    border-right: 48vw solid transparent
+    border-top: 50px solid #ffffff
+    box-sizing: border-box
+
+#testimonials
+  .item
+    min-height: 500px
+    background-size: cover
+    .carousel-caption
+      .strike
+        display: block
+        text-align: center
+        overflow: hidden
+        white-space: nowrap
+        > span
+          position: relative
+          display: inline-block
+          border: 1.5px solid #ffffff
+          border-radius: 50%
+          -webkit-border-radius: 50%
+          -moz-border-radius: 50%
+          padding: 10px 14px
+          &:before, &:after
+            content: ""
+            position: absolute
+            top: 50%
+            width: 9999px
+            height: 1.5px
+            background: #ffffff
+          &:before
+            right: 100%
+          &:after
+            left: 100%
+          img
+            padding-top: 3px
+      hr
+        border-top: 2px solid #ffffff
+        width: 100%
+      p
+        font-family: 'GothamMedium', 'sans-serif'
+        &.testimonial
+          margin: 50px 50px
+          font-size: 18px
+        &.author
+          font-size: 14px
+          margin: 40px 0
+
+#companies
+  .row
+    margin: 0
+    [class*="col-"]
+      min-height: 150px
+      &.intro
+        display: flex
+        justify-content: center
+        align-content: center
+        flex-direction: column
+        h2
+          font-family: "GothamBook", "sans-serif" !important
+          padding-top: 15px
+          margin-left: 30px
+          border-right: 2px solid #F25A2A
+      .company-logo
+        padding: 50px 0
+        max-height: 150px
+
+#contact
+  background-color: #3C3D41
+  color: #ffffff
+  padding-top: 71px
+  .left
+    h1
+      display: inline-block
+      border-bottom: 1.5px solid #15C4CB
+      padding-bottom: 20px
+      margin-bottom: 50px
+      font-size: 2.5em
+    p, address
+      font-size: 18px
+  .glyphicon
+    padding-right: 10px
+    color: #15C4CB
+  input.form-control
+    height: 45px
+  .form-control
+    color: #ffffff
+    border-radius: 10px
+    background-color: transparent
+  .form-control::-webkit-input-placeholder
+    color: #B3B3B3 !important
+  .form-control:-moz-placeholder
+    color: #B3B3B3 !important
+  .form-control::-moz-placeholder
+    color: #B3B3B3 !important
+  .form-control:-ms-input-placeholder
+    color: #B3B3B3 !important
+  h1
+    text-align: left
+    &.question
+      font-size: 17px
+  .description
+    font-size: 14px
+  .btn
+    background: #15C4CB
+    margin-bottom: 20px
+  footer
+    p
+      font-size: 12px
+      margin-bottom: 20px
+      &.back-to-top
+        cursor: pointer
+        padding-left: 10px
+        padding-right: 0
+    hr
+      width: 100%
+    .copyright
+      color: #606266
+
+@media (max-width: $screen-md-max)
+  #hero
+    .hero-text
+      margin: 40px !important
+
+@media (max-width: $screen-sm-max)
+  #hero
+    .hero-text
+      color: #ffffff
+      font-size: 12px !important
+    .slogan-one
+      font-size: 20px !important
+    .slogan-two
+      font-size: 15px !important
+  #testimonials
+    .item
+      min-height: 600px
+      .testimonial
+        margin: 50px 0 !important
+  #companies
+    .intro
+      h2
+        padding-top: 0 !important
+        padding-bottom: 15px
+        text-align: center
+        border-right: 0 !important
+        border-bottom: 2px solid #F25A2A
+
+@media (max-width: $screen-xs-max)
+  #hero
+    .hero-text
+      margin: 10px !important
+      font-size: 10px !important
+      color: #ffffff
+    .slogan-one
+      font-size: 14px !important
+    .slogan-two
+      font-size: 10px !important
+  #companies
+    .intro
+      h2
+        font-size: 1.2em !important
