@@ -1,0 +1,33 @@
+#hero
+  background-color: #ffffff
+  .hero-image
+    height: 350px
+  h2
+    font-family: 'GothamLight', 'sans-serif' !important
+    margin: 20px 350px
+    font-size: 2em
+  .feature-image
+    max-height: 150px
+    margin-top: 30px
+  p
+    font-size: 16px
+    font-family: 'GothamLight', 'sans-serif'
+    margin: 10px 0 30px 0
+    strong
+      font-family: 'GothamBook', 'sans-serif'
+#hero-border
+  left: 0
+  top: 0
+  width: 100%
+  height: 0
+  background: #ffffff
+  text-align: center
+  &::before
+    content: ""
+    display: inline-block
+    top: 100%
+    width: 100%
+    border-left: 48vw solid transparent
+    border-right: 48vw solid transparent
+    border-top: 50px solid #ffffff
+    box-sizing: border-box
