@@ -6,7 +6,7 @@
     margin-bottom: 100px
   h2
     font-family: 'GothamLight', 'sans-serif' !important
-    margin: 20px 350px
+    margin: 2% 25%
     font-size: 2em
   .feature-image
     max-height: 100px
@@ -44,7 +44,7 @@
     border-top: none
     border-bottom: 2px solid #F25A2A
   p
-    margin: 10px 295px
+    margin: 5% 25%
 #colateral-border
   left: 0
   top: 0
@@ -117,3 +117,30 @@
     border-right: 48vw solid transparent
     border-top: 50px solid #F7F7F7
     box-sizing: border-box
+
+@media (max-width: $screen-xs-max)
+  #hero
+    .hero-image
+      margin-bottom: 50px
+    h2
+      margin: 2% 5%
+  #colateral
+    p
+      margin: 5% 10%
+  #about-top
+    .container
+      .about-top-logo
+        max-height: 200px
+  #about-bottom
+    .container
+      .about-bottom-logo
+        max-height: 170px
+        margin-top: 50px
+        margin-bottom: 50px
+
+@media (max-width: $screen-sm-max) and (min-width: $screen-sm-min)
+  #about-top
+    .container
+      .about-top-logo
+        margin-top: 200px
+        margin-bottom: 200px
