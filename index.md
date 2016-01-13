@@ -124,24 +124,4 @@ companies:
 
   - name: Skills2Use
     logo: images/logos/S2U.png
-    
-#conact section
-contact-title: CONTACT US
-contact-get-in-touch: >
-  It's easy to get in touch, just call or email <strong>Dorian</strong> or <strong>Amanda</strong> and we
-  look forward to hearing from you.
-
-contact-question: Would co.lateral make your working life better?
-contact-description: >
-  Is there a complex problem that needs our technological expertise and design?
-  Do you have a very definite requirement for a software solution?
-  Even if you are simply exploring what is possible with today's new technologies,
-  it would be great to hear from you.
-
-contact-email: hello@weareswoop.com
-contact-no: +44 (0)1209 314147
-contact-name: Swoop Labs
-contact-address1: Krowji, West Park,
-contact-address2: Redruth TR15 3AJ
-contact-country: United Kingdom
 ---

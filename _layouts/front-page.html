@@ -146,45 +146,4 @@ css: main.css
     </div>
 </section>
 
-<section id="contact" class="container-fluid">
-    <div class="container">
-        <div class="col-md-4 left">
-            <h1>{{ page.contact-title }}</h1>
-            <p>{{ page.contact-get-in-touch }}</p>
-            <p>
-                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>{{ page.contact-no }} <br>
-                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>{{ page.contact-email }}
-            </p>
-            <address>
-                {{ page.contact-name }}<br />
-                {{ page.contact-address1 }} <br />
-                {{ page.contact-address2 }} <br />
-                {{ page.contact-country }}
-            </address>
-        </div>
-        <div class="col-md-8">
-            <h1 class="question">{{ page.contact-question }}</h1>
-            <p class="description">{{ page.contact-description }}</p>
-            <div class="row">
-                <div class="form-group col-sm-4">
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" required>
-                </div>
-                <div class="form-group col-sm-4">
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                </div>
-                <div class="form-group col-sm-4">
-                    <input type="email" class="form-control" id="phone" placeholder="Enter phone" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-            </div>
-            <button type="submit" id="form-submit" class="btn btn-lg pull-right ">SEND</button>
-        </div>
-        <footer>
-            <hr />
-            <p class="pull-left"><span class="copyright">COPYRIGHT</span> SWOOP 2016</p>
-            <p class="pull-right back-to-top">BACK TO TOP <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></p>
-        </footer>
-    </div>
-</section>
+{% include contact.html %}
