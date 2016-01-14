@@ -6,27 +6,27 @@ css: colateral.css
 <section id="hero" class="container-fluid">
     <div class="col-md-12">
         <img src="{{site.baseurl}}/images/colateral/colateral.png" alt="logo" class="img-responsive center-block hero-image">
-        <h2 class="text-center"><strong>Technology</strong> that can meet the needs of your business <strong>today</strong> and in the <strong>future</strong></h2>
+        <h2 class="text-center">{{ page.hero-title }}</h2>
         <div class="row">
             <div class="col-md-2 col-md-offset-1 col-xs-6 col-sm-4">
-                <img src="{{ site.baseurl }}/images/colateral/workflow.png" alt="test" class="img-responsive center-block feature-image">
-                <p class="text-center">Workflow</p>
+                <img src="{{ site.baseurl }}/{{ page.hero-icon-1 }}" alt="test" class="img-responsive center-block feature-image">
+                <p class="text-center">{{ page.hero-icon-1-text }}</p>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-4">
-                <img src="{{ site.baseurl }}/images/colateral/communication.png" alt="test" class="img-responsive center-block feature-image">
-                <p class="text-center">Communication</p>
+                <img src="{{ site.baseurl }}/{{ page.hero-icon-2 }}" alt="test" class="img-responsive center-block feature-image">
+                <p class="text-center">{{ page.hero-icon-2-text }}</p>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-4">
-                <img src="{{ site.baseurl }}/images/colateral/insights.png" alt="test" class="img-responsive center-block feature-image">
-                <p class="text-center">Insight</p>
+                <img src="{{ site.baseurl }}/{{ page.hero-icon-3 }}" alt="test" class="img-responsive center-block feature-image">
+                <p class="text-center">{{ page.hero-icon-3-text }}</p>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-6">
-                <img src="{{ site.baseurl }}/images/colateral/compliance.png" alt="test" class="img-responsive center-block feature-image">
-                <p class="text-center">Compliance</p>
+                <img src="{{ site.baseurl }}/{{ page.hero-icon-4 }}" alt="test" class="img-responsive center-block feature-image">
+                <p class="text-center">{{ page.hero-icon-4-text }}</p>
             </div>
             <div class="col-md-2 col-sm-6">
-                <img src="{{ site.baseurl }}/images/colateral/reporting.png" alt="test" class="img-responsive center-block feature-image">
-                <p class="text-center">Reporting</p>
+                <img src="{{ site.baseurl }}/{{ page.hero-icon-5 }}" alt="test" class="img-responsive center-block feature-image">
+                <p class="text-center">{{ page.hero-icon-5-text }}</p>
             </div>
         </div>
     </div>
@@ -35,11 +35,9 @@ css: colateral.css
 
 <section id="colateral" class="container-fluid">
     <div class="container">
-        <h1>What is co.lateral?</h1>
+        <h1>{{ page.colateral-title }}</h1>
         <hr class="orange"/>
-        <p class="text-center">
-            co.lateral is a technical solution the meets the requirements of today's complex businiess, helping to drive more efficient processes and deliver better, more timely communications between teams and individuals. All actions are tracked, and logged, and the technology can report on a significant number of metrics and outcomes to suit each organisation's needs.
-        </p>
+        <p class="text-center">{{ page.colateral-description }}</p>
     </div>
 </section>
 <div id="colateral-border"></div>
@@ -48,20 +46,15 @@ css: colateral.css
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="{{ site.baseurl }}/images/colateral/about-top-logo.png" alt="About Logo" class="img-responsive center-block about-top-logo">
+                <img src="{{ site.baseurl }}/{{ page.about-top-image }}" alt="About Logo" class="img-responsive center-block about-top-logo">
             </div>
             <div class="col-sm-6">
+                {% for description in page.about-top-descriptions %}
                 <div class="description">
-                    <h1 class="text-left">SIMPLIFY WORKLOAD</h1>
-                    <p>Workflow management, businesses processes and the sharing of information are part of every working day. Over time these can become inefficient and laboured, with many manual steps and individual actions that could be made more efficient using co.lateral's Workflow module.</p>
+                    <h1 class="text-left">{{ description.title }}</h1>
+                    <p>{{ description.description }}</p>
                 </div>
-                <div class="description">
-                    <h1 class="text-left">SIMPLIFY WORKLOAD</h1>
-                    <p>Workflow management, businesses processes and the sharing of information are part of every working day. Over time these can become inefficient and laboured, with many manual steps and individual actions that could be made more efficient using co.lateral's Workflow module.</p>
-                </div>
-                <div class="description">
-                    <h1 class="text-left">SIMPLIFY WORKLOAD</h1>
-                    <p>Workflow management, businesses processes and the sharing of information are part of every working day. Over time these can become inefficient and laboured, with many manual steps and individual actions that could be made more efficient using co.lateral's Workflow module.</p>
+                {% endfor %}
                 </div>
             </div>
         </div>
@@ -73,16 +66,15 @@ css: colateral.css
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-push-6">
-                <img src="{{ site.baseurl }}/images/colateral/about-bottom-logo.png" alt="About Logo" class="img-responsive center-block about-bottom-logo">
+                <img src="{{ site.baseurl }}/{{ page.about-bottom-image }}" alt="About Logo" class="img-responsive center-block about-bottom-logo">
             </div>
             <div class="col-md-6 col-md-pull-6">
+                {% for description in page.about-bottom-descriptions %}
                 <div class="description">
-                    <h1 class="text-left">COMPLIANCE STANDARDS.</h1>
-                    <p>In an organisation with complex processes and structures, it is vitally important to be able to track information flows, notifications, comments and approvals. Each individual must take responsibility for their own actions, however it can sometimes be unclear where a breakdown has occurred. By using co.lateral each step and action in the process is captured and each comment logged. Importantly all the data is easily and readily available.</p>
+                    <h1 class="text-left">{{ description.title }}</h1>
+                    <p>{{ description.description }}</p>
                 </div>
-                <div class="description">
-                    <h1 class="text-left">REPORTING & ANALYSIS.</h1>
-                    <p>By breaking down complex organisational structures and processes into manageable steps and actions, and presenting detail in a simple, easy to use way, co.lateral will provide transparency and visibility of actions throughout your organisation. The technology is designed to report on, and analyse different elements of the workflow, and provide data and information in easy to interpret reports.</p>
+                {% endfor %}
                 </div>
             </div>
         </div>
