@@ -92,6 +92,8 @@ colateral-description: >
   At its heart is the ability to manage processes,
   and solve complex process issues through the use of advanced technology.
   It is module-based and is flexible enough to meet the needs of your business today whilst developing with you into the future.
+colateral-discover-url: colateral
+colateral-discover-btn: Discover More
 
 #testimonials section
 testimonials:
