@@ -6,6 +6,7 @@
 
 - name: co.lateral
   url: "/colateral"
+  custom-class: active
 
 - name: CONTACT US
   url: "/#contact"

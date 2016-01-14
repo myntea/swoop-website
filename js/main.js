@@ -28,7 +28,25 @@ swoop.anchorEasing = function(){
         }, 500);
         return false;
     });
+};
 
+swoop.navActive = function(){
+    $(window).scroll(function() {
+        var windscroll = $(window).scrollTop();
+        if (windscroll >= 0) {
+            $("section:not([id*='testimonials']):not([id*='companies']").each(function(i) {
+                if ($(this).position().top <= windscroll ) {
+                    $('nav a.active').removeClass('active');
+                    $('nav a').eq(i).addClass('active');
+                }
+            });
+
+        } else {
+            $('nav a.active').removeClass('active');
+            $('nav a:first').addClass('active');
+        }
+
+    }).scroll();
 };
 
 $(function(){
