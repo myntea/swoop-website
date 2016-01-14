@@ -22,11 +22,11 @@ colateral-description: <strong>co.lateral</strong> is a technical solution the m
 #about top section
 about-top-image: images/colateral/about-top-logo.png
 about-top-descriptions:
-  - title: SIMPLIFY WORKLOAD.
+  - title: SIMPLIFY WORKLOAD<span class='dot'>.</span>
     description: Workflow management, businesses processes and the sharing of information are part of every working day. Over time these can become inefficient and laboured, with many manual steps and individual actions that could be made more efficient using <strong>co.lateral</strong>'s Workflow module.
-  - title: COMMUNICATIONS THROUGH A SIMPLE USER INTERFACE.
+  - title: COMMUNICATIONS THROUGH A SIMPLE USER INTERFACE<span class='dot'>.</span>
     description: We all recognise the value of face to face communications. Within the <strong>co.lateral</strong> technology, even if teams are not in the same place, effective communications can happen easily and efficiently, with voice calls, file share updating and commenting, screen sharing and instant messaging all seamlessly built into the Share interface.
-  - title: INSIGHT & INTELLIGENCE.
+  - title: INSIGHT & INTELLIGENCE<span class='dot'>.</span>
     description: The importance of data, and using surveys and an audit functionality to create an understanding of in-store standards, customer experiences, event attendees or cross platform users is possible using <strong>co.lateral</strong>'s Survey module. This technology has been created to both capture data and allow feedback, and also deliver audit reports on the move.
 
 #about bottom section

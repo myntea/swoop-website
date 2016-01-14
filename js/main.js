@@ -2,6 +2,7 @@ var swoop = swoop || {};
 swoop.init = function() {
     swoop.backToTop();
     swoop.anchorEasing();
+    swoop.colorizeDot();
 };
 
 swoop.backToTop = function(){
@@ -47,6 +48,12 @@ swoop.navActive = function(){
         }
 
     }).scroll();
+};
+
+swoop.colorizeDot = function(){
+    $("strong:contains('co.lateral')").each(function (){
+        $(this).html($(this).text().replace('.', "<span class='dot'>.</span>"));
+    });
 };
 
 $(function(){
