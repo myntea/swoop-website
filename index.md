@@ -70,7 +70,7 @@ features:
       background-color: 33383D
     
     - image: images/features/success_graphic.png
-      description: Proven <br><strong>Success</strong>
+      description: Proven <br><strong>success</strong>
       background-color: 333333
     
     - image: images/features/worldwide_graphic.png
