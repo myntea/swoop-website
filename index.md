@@ -34,7 +34,7 @@ swoop-mini-descriptions:
 swoop-description-logo: images/swoop_logo_vertical.png
 swoop-descriptions:
   - Swoop is a technology business, developing enterprise applications and leading-edge software to solve a wide variety of business issues. We work with clients across Europe, and are focussed on developing solutions that automate business processes which ease the organisational and personal burden of manually handing large amounts of data.
-  - The main technology that Swoop delivers into organisations is co.lateral, which helps companies work better, be more effective and increase efficiency. At its heart, co.lateral is about process, and solving real and costly business process issues through the use of advanced technology. It is module-based, and is tailored for each specific client objective. As your business evolves, co.lateral is intended to be modified and developed over time, with additional features designed and deployed.
+  - The main technology that Swoop delivers into organisations is <strong>co.lateral</strong>, which helps companies work better, be more effective and increase efficiency. At its heart, <strong>co.lateral</strong> is about process, and solving real and costly business process issues through the use of advanced technology. It is module-based, and is tailored for each specific client objective. As your business evolves, <strong>co.lateral</strong> is intended to be modified and developed over time, with additional features designed and deployed.
   
 #services section
 services-title: OUR SERVICES
@@ -52,7 +52,7 @@ services-services:
         but fundamentally the desire for clarity of communications, 
         simplified workflow, improved collaboration, automated processes 
         and relevant notifications are common across all sectors, regardless of the 
-        business you are in. We would love to introduce you to our co.lateral 
+        business you are in. We would love to introduce you to our <strong>co.lateral</strong> 
         technology and match the capabilities of the system to the needs of your organisation.
 
   - title: BESPOKE SOLUTIONS.
