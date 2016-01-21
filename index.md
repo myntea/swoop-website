@@ -4,7 +4,7 @@ layout: front-page
 #hero section
 hero-quote: “WE ALL WORK BETTER WHEN WE SHARE INFORMATION AND HAVE THE TOOLS TO COLLABORATE... <strong>co.lateral</strong> MAKES THAT HAPPEN”
 hero-slogan-one: Software and technology solutions delivered for you
-hero-slogan-two: WORK SMARTER  |  COMMUNICATE BETTER  |  REDDUCE RISK  |  MAXIMISE NEW OPPORTUNITIES
+hero-slogan-two: WORK SMARTER  |  COMMUNICATE BETTER  |  REDUCE RISK  |  MAXIMISE NEW OPPORTUNITIES
 
 #swoop section (limit mini descriptions to 3)
 swoop-title: WE ARE SWOOP
