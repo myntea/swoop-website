@@ -27,13 +27,16 @@ customjs: >
             <a class="sbg-button sbg-button-facebook"  data-sbg-network="facebook"  data-sbg-url="{{ page.article-image | prepend: site.baseurl | prepend: site.url}}"  data-sbg-title="{{ page.title }}"  data-sbg-summary="{{ page.content | truncate: 160 }}"  data-sbg-image="{{ page.article-image }}"  data-sbg-width="600"  data-sbg-height="368" >
                 <i class="sbg-button-icon fa fa-facebook"></i>
             </a>
-            <a class="sbg-button sbg-button-twitter"  data-sbg-network="twitter"  data-sbg-text="http://google.com"  data-sbg-via="aakilfernandes"  data-sbg-hashtags="sharing,simple"  data-sbg-width="600"  data-sbg-height="258" >
+
+            <a class="sbg-button sbg-button-twitter"  data-sbg-network="twitter"  data-sbg-text="{{ site.baseurl | prepend: site.url}}"  data-sbg-via=""  data-sbg-hashtags=""  data-sbg-width="600"  data-sbg-height="258" >
                 <i class="sbg-button-icon fa fa-twitter"></i>
             </a>
-            <a class="sbg-button sbg-button-google-plus"  data-sbg-network="google-plus"  data-sbg-url="http://google.com"  data-sbg-width="500"  data-sbg-height="505" >
+
+            <a class="sbg-button sbg-button-google-plus"  data-sbg-network="google-plus"  data-sbg-url="{{ site.baseurl | prepend: site.url}}"  data-sbg-width="500"  data-sbg-height="505" >
                 <i class="sbg-button-icon fa fa-google-plus"></i>
             </a>
-            <a class="sbg-button sbg-button-email"  data-sbg-network="email"  data-sbg-subject="Create simple share buttons"  data-sbg-body="http://google.com" >
+
+            <a class="sbg-button sbg-button-email"  data-sbg-network="email"  data-sbg-subject="{{ page.title }}"  data-sbg-body="Read: {{ site.baseurl | prepend: site.url}}" >
                 <i class="sbg-button-icon fa fa-envelope"></i>
             </a>
         </div>
