@@ -6,7 +6,7 @@ swoop.init = function() {
 };
 
 swoop.backToTop = function(){
-    $('.back-to-top, .navbar-brand').on('click', function (e) {
+    $('.back-to-top').on('click', function (e) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
@@ -15,7 +15,7 @@ swoop.backToTop = function(){
 };
 
 swoop.anchorEasing = function(){
-    $('#navbar').on('click', 'a[href*=#]', function(event){
+    $('.navbar-right a[href*=#]').click(function(event){
         var url = "#" + $.attr(this, 'href').substring($.attr(this, 'href').indexOf("#")+1);
         $('html, body').animate({
             scrollTop: $( url ).offset().top
