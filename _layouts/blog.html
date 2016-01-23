@@ -1,0 +1,50 @@
+---
+layout: default
+css: blog.css
+---
+<section id="blog-head" class="container">
+    <div class="col-md-12">
+        <img src="{{ site.baseurl }}/images/colateral/communication.png" alt="Blog Image" class="img-responsive head-image center-block">
+        <h1>BLOG</h1>
+        <hr class="orange">
+        <p class="text-center head-description">We don't like to keep things to ourselves about what we're interested in, the ways we can help businesses achieve their objectives, the great work we do and who we do it for.
+            Have a read, share, enjoy, and let us know what you think.</p>
+        <div class="row latest-article">
+            <div class="col-md-8 article-image vcenter">
+                <img class="img-responsive" src="{{ site.posts[0].article-image | prepend: site.baseurl }}" alt="">
+            </div><!--
+            --><div class="col-md-4 vcenter">
+                <span class="time">{{ site.posts[0].date | date: "%b %-d, %Y" }}</span>
+                <h1 class="text-left title">{{ site.posts[0].title }}</h1>
+                <hr class="description-hr">
+                <p>{{ site.posts[0].excerpt }}</p>
+                <a class="btn btn-default" href="{{ site.posts[0].url | prepend: site.baseurl }}">READ ARTICLE</a>
+            </div>
+        </div>
+    </div>
+    <hr class="orange full-width">
+</section>
+
+<section id="other-posts" class="container">
+    <div class="row">
+        {{ content }}
+    </div>
+</section>
+<section id="pagination">
+    <div class="container">
+        {% if paginator.total_pages > 1 %}
+            <div class="pagination center-block text-center">
+                {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                        <a class="active">{{ page }}</a>
+                    {% elsif page == 1 %}
+                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                    {% else %}
+                        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>
+{% include contact.html %}

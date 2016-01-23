@@ -1,0 +1,18 @@
+---
+layout: blog
+---
+
+{% for post in paginator.posts %}
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="{{ post.article-image | prepend: site.baseurl }}" alt="Article image">
+            <div class="caption">
+                <span class="time">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <h3>{{ post.title }}</h3>
+                <hr class="green">
+                <p>{{ post.excerpt }}</p>
+                <p><a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-default" role="button">READ ARTICLE</a></p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
