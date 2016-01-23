@@ -13,6 +13,16 @@
     <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    <script>
+      swoop.share = function(){
+        var imported = document.createElement('script');
+        imported.src = '{{ site.baseurl }}/js/sbg.js';
+        document.head.appendChild(imported);
+        setTimeout(function() {
+          sbg();
+        }, 1000);
+      };
+    </script>
     {{ page.customjs }}
   </body>
 

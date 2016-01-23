@@ -1,12 +1,20 @@
 ---
 layout: default
 css: post.css
+customcss: >
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+customjs: >
+    <script>
+        $(document).ready(function(){
+            swoop.share();
+        });
+    </script>
 ---
 
 <section id="post">
     <div class="container">
         <div class="heading center-block text-center">
-            <span class="time">{{ page.date | date: "%b %-d, %Y" }}</span>
+            <span class="time">{{ page.date | date: "%b %-d, %Y" }} </span>
             <h1>{{ page.title }}</h1>
             <hr class="green">
             <img class="img-responsive center-block" src="{{ page.article-image | prepend: site.baseurl }}" alt="Article Image">
@@ -15,7 +23,21 @@ css: post.css
             {{ content }}
         </div>
         <hr class="full-width">
-
+        <div class="share text-right">
+            {{ page.url }}
+            <a class="sbg-button sbg-button-facebook"  data-sbg-network="facebook"  data-sbg-url="http://longhairedmedia.github.io/swoop-website/blog/jekyll/update/welcome-to-jekyll%20copy%2017/"  data-sbg-title="Share Button Generator"  data-sbg-summary="Create simple share buttons, no strings attached"  data-sbg-image="http://election.gv.my/assets/vote.png"  data-sbg-width="600"  data-sbg-height="368" >
+                <i class="sbg-button-icon fa fa-facebook"></i>
+            </a>
+            <a class="sbg-button sbg-button-twitter"  data-sbg-network="twitter"  data-sbg-text="http://google.com"  data-sbg-via="aakilfernandes"  data-sbg-hashtags="sharing,simple"  data-sbg-width="600"  data-sbg-height="258" >
+                <i class="sbg-button-icon fa fa-twitter"></i>
+            </a>
+            <a class="sbg-button sbg-button-google-plus"  data-sbg-network="google-plus"  data-sbg-url="http://google.com"  data-sbg-width="500"  data-sbg-height="505" >
+                <i class="sbg-button-icon fa fa-google-plus"></i>
+            </a>
+            <a class="sbg-button sbg-button-email"  data-sbg-network="email"  data-sbg-subject="Create simple share buttons"  data-sbg-body="http://google.com" >
+                <i class="sbg-button-icon fa fa-envelope"></i>
+            </a>
+        </div>
         <div class="related">
             {% assign counter = 0 %}
             {% for post in site.posts %}
