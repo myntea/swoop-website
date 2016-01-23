@@ -4,11 +4,12 @@ css: blog.css
 ---
 <section id="blog-head" class="container">
     <div class="col-md-12">
-        <img src="{{ site.baseurl }}/images/colateral/communication.png" alt="Blog Image" class="img-responsive head-image center-block">
-        <h1>BLOG</h1>
+        <img src="{{ site.baseurl }}/{{ page.title-image }}" alt="Blog Image" class="img-responsive head-image center-block">
+        <h1>{{ page.title }}</h1>
         <hr class="orange">
-        <p class="text-center head-description">We don't like to keep things to ourselves about what we're interested in, the ways we can help businesses achieve their objectives, the great work we do and who we do it for.
-            Have a read, share, enjoy, and let us know what you think.</p>
+        <p class="text-center head-description">
+            {{ page.title-description }}
+        </p>
         <div class="row latest-article">
             <div class="col-md-8 article-image vcenter">
                 <img class="img-responsive" src="{{ site.posts[0].article-image | prepend: site.baseurl }}" alt="Featured Image">
