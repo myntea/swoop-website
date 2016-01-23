@@ -38,7 +38,7 @@ swoop.navActive = function(){
             $("section:not([id*='testimonials']):not([id*='companies']").each(function(i) {
                 if ($(this).position().top <= windscroll ) {
                     $('nav a.active').removeClass('active');
-                    $('nav a').eq(i).addClass('active');
+                    $('nav a').not('.blog').eq(i).addClass('active');
                 }
             });
 

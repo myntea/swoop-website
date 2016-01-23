@@ -14,7 +14,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 {% for link in site.data.navbar-links %}
-                    <li><a class="text-center{% if page.url =='/colateral/' %} {{ link.custom-class }}{% endif %}" href="{{ site.baseurl }}{{ link.url }}">{{ link.name }}</a></li>
+                    <li><a class="text-center{% if page.url =='/colateral/' %} {{ link.custom-class }}{% elsif link.custom-class == 'blog' %} {{ link.custom-class }} {{ if page.url contains '/blog/  }} active {{ endif }}{% endif %}" href="{{ site.baseurl }}{{ link.url }}">{{ link.name }}</a></li>
                 {% endfor %}
             </ul>
         </div><!--/.nav-collapse -->
