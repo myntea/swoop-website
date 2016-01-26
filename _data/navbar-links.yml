@@ -4,7 +4,7 @@
 - name: OUR SERVICES
   url: "/#services"
 
-- name: co.lateral
+- name: co<span class="dot">.</span>lateral
   url: "/colateral"
   custom-class: active
 
