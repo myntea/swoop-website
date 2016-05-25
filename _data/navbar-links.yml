@@ -8,9 +8,5 @@
   url: "/colateral"
   custom-class: active
 
-- name: BLOG
-  url: "/blog"
-  custom-class: blog
-
 - name: CONTACT US
   url: "/#contact"

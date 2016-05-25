@@ -100,19 +100,19 @@ customjs: >
 </section>
 <div id="colateral-border"></div>
 
-<section id="testimonials" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+<!--<section id="testimonials" class="carousel slide" data-ride="carousel">
+    <!-- Indicators - ->
     <ol class="carousel-indicators">
         {% for testimonial in page.testimonials %}
         <li data-target="#testimonials" data-slide-to="{{ forloop.index0 }}" {% if forloop.index0 == 0 %}class="active"{% endif %}></li>
         {% endfor %}
     </ol>
 
-    <!-- Wrapper for slides -->
+    <!-- Wrapper for slides - ->
     <div class="carousel-inner" role="listbox">
         {% for testimonial in page.testimonials %}
         <div class="item {% if forloop.index0 == 0 %}active{% endif %}" style="background-image: url({{ site.baseurl }}/{{ testimonial.bg-image }});">
-            <!--<img src="{{ site.baseurl }}/images/hero-image.png" alt="...">-->
+            <!--<img src="{{ site.baseurl }}/images/hero-image.png" alt="...">- ->
             <div class="carousel-caption">
                 <hr />
                 <p class="testimonial">{{ testimonial.message }}</p>
@@ -127,7 +127,7 @@ customjs: >
         {% endfor %}
     </div>
 
-    <!-- Controls -->
+    <!-- Controls - ->
     <a class="left carousel-control" href="#testimonials" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -136,7 +136,7 @@ customjs: >
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</section>
+</section>-->
 
 <!--<section id="companies" class="container-fluid">-->
     <!--<div class="row">-->
