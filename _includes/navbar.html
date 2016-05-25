@@ -10,6 +10,11 @@
             <a class="navbar-brand" href="{{ site.url | append: site.baseurl }}">
                 <img alt="Brand" src="{{site.baseurl}}/images/swoop_logo.png">
             </a>
+            {% if page.extra-logo %}
+            <a href="http://www.smpgroup.co.uk" id="{{page.extra-logo-id}}">
+                <img alt="Brand" src="{{site.baseurl}}/{{page.extra-logo}}">
+            </a>
+            {% endif %}
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">

@@ -1,0 +1,15 @@
+---
+layout: default-no-contact
+css: demo.css
+customjs: >
+    <script type="text/javascript">
+        swoop.navActive();
+    </script>
+---
+
+<div id="demo-page-content">
+{% for image in page.images %}
+<img src="{{image}}" class="full-width-demo-image" />
+{% endfor %}
+{{ content }}
+</div>
