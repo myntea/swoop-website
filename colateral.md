@@ -17,7 +17,7 @@ hero-icon-5-text: REPORTING
 
 #colateral section
 colateral-title: What is <strong>co.lateral</strong>?
-colateral-description: <strong>co.lateral</strong> is a technical solution the meets the requirements of today's complex businiess, helping to drive more efficient processes and deliver better, more timely communications between teams and individuals. All actions are tracked, and logged, and the technology can report on a significant number of metrics and outcomes to suit each organisation's needs.
+colateral-description: <strong>co.lateral</strong> is a technical solution that meets the requirements of today's complex businiess, helping to drive more efficient processes and deliver better, more timely communications between teams and individuals. All actions are tracked, and logged, and the technology can report on a significant number of metrics and outcomes to suit each organisation's needs.
 
 #about top section
 about-top-image: images/colateral/about-top-logo.png
